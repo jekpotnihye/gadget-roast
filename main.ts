@@ -1,12 +1,12 @@
 // One-Line Roast entry: writes one roast of an everyday gadget to
-// /output/entry.txt. The roast targets the phone battery: a concrete,
-// specific daily gripe — a phone that claims all-day battery, but only
-// if the day is cut short and the phone is barely used. Kept short and
-// plain so the joke lands on a first read.
+// /output/entry.txt. The roast targets the charging cable: a concrete,
+// specific daily gripe — a cable that only charges when bent at one
+// exact angle, so keeping the phone alive becomes a balancing act.
+// A fresh visual comparison carries the joke in one read.
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const roast =
-  "My phone lasts all day, as long as my day ends at 2 p.m. and I never actually use it.";
+  "My charger only works if the cable leans left at exactly one angle, like it is doing yoga just to keep my phone alive.";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", roast, "utf8");
