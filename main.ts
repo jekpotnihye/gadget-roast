@@ -6,7 +6,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const roast =
-  "My charger only works if the cable leans left at exactly one angle, like it is doing yoga just to keep my phone alive.";
+  "My charger only charges if the cable leans left at one exact angle, like it is doing yoga to keep my phone alive.";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", roast, "utf8");
